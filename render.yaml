@@ -9,6 +9,40 @@ services:
     numInstances: 1
     healthCheckPath: /
     envVars:
+      - key: N8N_HOST
+        value: https://n8n-ppl.onrender.com/
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n-ppl.onrender.com/
+      - key: PORT
+        value: 5678
+      - key: N8N_ENCRYPTION_KEY
+        value: zbkX90A3Y2HQZcVLUOdScLz4aw3noXCZ
+      - key: VUE_APP_URL_BASE_API
+        value: https://n8n-ppl.onrender.com/
+      - key: WEBHOOK_URL
+        value: https://n8n-ppl.onrender.com/
+      - key: TUNNEL_WEBHOOK_URL
+        value: https://n8n-ppl.onrender.com/
+      - key: GENERIC_TIMEZONE
+        value: America/Los_Angeles
+      - key: TZ
+        value: America/Los_Angeles
+      - key: N8N_LOG_LEVEL
+        value: verbose
+      - key: DB_TYPE
+        value: postgresdb
+      - key: EXECUTIONS_DATA_PRUNE
+        value: true
+      - key: EXECUTIONS_DATA_MAX_AGE
+        value: 72
+      - key: EXECUTIONS_DATA_SAVE_ON_ERROR
+        value: all
+      - key: EXECUTIONS_DATA_SAVE_ON_SUCCESS
+        value: none
+      - key: EXECUTIONS_DATA_SAVE_ON_PROGRESS
+        value: false
+      - key: EXECUTIONS_DATA_SAVE_MANUAL_EXECUTIONS
+        value: false
       - key: PGHOST
         fromDatabase:
           name: n8nDB
