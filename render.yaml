@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: n8n-ppl
+    name: ppl-automate
     env: docker
     region: oregon # optional (defaults to oregon)
     plan: standard # optional (defaults to starter)
@@ -10,19 +10,19 @@ services:
     healthCheckPath: /
     envVars:
       - key: N8N_HOST
-        value: https://n8n-ppl.onrender.com/
+        value: https://ppl-automate.onrender.com/
       - key: N8N_EDITOR_BASE_URL
-        value: https://n8n-ppl.onrender.com/
+        value: https://ppl-automate.onrender.com/
       - key: PORT
         value: 5678
       - key: N8N_ENCRYPTION_KEY
         value: zbkX90A3Y2HQZcVLUOdScLz4aw3noXCZ
       - key: VUE_APP_URL_BASE_API
-        value: https://n8n-ppl.onrender.com/
+        value: https://ppl-automate.onrender.com/
       - key: WEBHOOK_URL
-        value: https://n8n-ppl.onrender.com/
+        value: https://ppl-automate.onrender.com/
       - key: TUNNEL_WEBHOOK_URL
-        value: https://n8n-ppl.onrender.com/
+        value: https://ppl-automate.onrender.com/
       - key: GENERIC_TIMEZONE
         value: America/Los_Angeles
       - key: TZ
