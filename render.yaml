@@ -65,26 +65,20 @@ services:
         fromDatabase:
           name: n8nDB
           property: password
-      - key: PGHOST
-        fromDatabase:
-          name: n8nDB
-          property: host
-      - key: PGDATABASE
-        fromDatabase:
-          name: n8nDB
-          property: database
-      - key: PGPORT
-        fromDatabase:
-          name: n8nDB
-          property: port
-      - key: PGUSER
-        fromDatabase:
-          name: n8nDB
-          property: user
-      - key: PGPASSWORD
-        fromDatabase:
-          name: n8nDB
-          property: password
+      - key: N8N_DIAGNOSTICS_ENABLED
+          value: false
+      - key: N8N_VERSION_NOTIFICATIONS_ENABLED
+          value: false
+      - key: N8N_TEMPLATES_ENABLED
+          value: false
+      - key: EXTERNAL_FRONTEND_HOOKS_URLS
+          value: 
+      - key: N8N_DIAGNOSTICS_CONFIG_FRONTEND
+          value: 
+      - key: N8N_DIAGNOSTICS_CONFIG_BACKEND
+          value: 
+      - key: N8N_ONBOARDING_FLOW_DISABLED
+          value: true
     disk:
       name: n8nDisk
       mountPath: /home/node/.n8n
