@@ -28,7 +28,7 @@ services:
       - key: TZ
         value: America/Los_Angeles
       - key: N8N_LOG_LEVEL
-        value: verbose
+        value: debug
       - key: DB_TYPE
         value: postgresdb
       - key: EXECUTIONS_DATA_PRUNE
